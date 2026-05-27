@@ -1,6 +1,13 @@
-import { AUTHOR, GITHUB_URL, LAST_UPDATED, SIBLING_PROJECTS } from '@/lib/config'
+import { AUTHOR, GITHUB_URL, LAST_UPDATED, SIBLING_PROJECTS, UCSD_URL, KOFI_URL } from '@/lib/config'
 
 export function Footer() {
+  const linkStyle = {
+    color: 'inherit',
+    textDecoration: 'underline',
+    textDecorationColor: 'rgba(92, 90, 84, 0.45)',
+    textUnderlineOffset: '2px',
+  } as React.CSSProperties
+
   return (
     <footer className="border-t border-border">
       <div className="max-w-[720px] mx-auto px-6 py-16">
@@ -14,17 +21,7 @@ export function Footer() {
             </p>
             <p className="font-serif text-[16px] text-secondary leading-[1.8]">
               Built by{' '}
-              <a
-                href={GITHUB_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  color: 'inherit',
-                  textDecoration: 'underline',
-                  textDecorationColor: 'rgba(92, 90, 84, 0.45)',
-                  textUnderlineOffset: '2px',
-                }}
-              >
+              <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" style={linkStyle}>
                 {AUTHOR}
               </a>{' '}
               as a learning tool and public-interest resource. The failure modes are educational
@@ -59,6 +56,40 @@ export function Footer() {
               ))}
             </div>
           </div>
+        </div>
+
+        <div className="border-t border-border pt-8 mb-8">
+          <p
+            className="font-mono text-[11px] text-accent tracking-widest uppercase"
+            style={{ marginBottom: '14px' }}
+          >
+            About this project
+          </p>
+          <p className="font-sans text-[14px] text-secondary leading-[1.75]" style={{ marginBottom: '10px' }}>
+            Built as a learning tool and technical portfolio piece by{' '}
+            <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" style={linkStyle}>
+              Jacob Ortiz
+            </a>
+            , an AI researcher and physics student at{' '}
+            <a href={UCSD_URL} target="_blank" rel="noopener noreferrer" style={linkStyle}>
+              UCSD
+            </a>
+            .
+          </p>
+          <p className="font-sans text-[14px] text-secondary leading-[1.75]" style={{ marginBottom: '10px' }}>
+            Interactive visualizations run in the browser using toy models and illustrative demos.
+            They are not reproductions of frontier model behavior.
+          </p>
+          <p className="font-sans text-[14px] text-secondary leading-[1.75]" style={{ marginBottom: '14px' }}>
+            Citations link to original papers where available.
+          </p>
+          <p className="font-sans text-[13px] text-secondary leading-[1.7]">
+            If this was useful, you can{' '}
+            <a href={KOFI_URL} target="_blank" rel="noopener noreferrer" style={linkStyle}>
+              support my work on Ko-fi
+            </a>
+            .
+          </p>
         </div>
 
         <div className="border-t border-border pt-8">

@@ -35,7 +35,7 @@ export const LEARNING_PATHS: LearningPath[] = [
     reflectionQuestion:
       'After this path: In what situation would you most want an AI to disagree with you? How would you tell the difference between useful disagreement and a model simply being wrong?',
     whyItMatters:
-      'The failure modes associated with helpfulness are subtle — they look like the system working correctly right up until the moment they become a problem.',
+      'The failure modes associated with helpfulness are subtle. They look like the system working correctly right up until the moment they become a problem.',
   },
   {
     id: 'prompt_and_tool_risks',

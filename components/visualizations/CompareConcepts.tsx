@@ -31,7 +31,7 @@ function ModeSelector({
           cursor: 'pointer',
         }}
       >
-        <option value="">-- Select a concept --</option>
+        <option value="">Select a concept</option>
         {FAILURE_MODES.filter((m) => m.id !== exclude).map((m) => (
           <option key={m.id} value={m.id}>
             {m.displayName}

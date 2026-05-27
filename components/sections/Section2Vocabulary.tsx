@@ -51,7 +51,7 @@ const TERMS = [
   {
     term: 'Mesa-optimization',
     definition:
-      'A situation where a model trained by gradient descent develops an internal optimizer that pursues its own objective — which may differ from the training objective.',
+      'A situation where a model trained by gradient descent develops an internal optimizer that pursues its own objective, which may differ from the training objective.',
   },
   {
     term: 'RLHF',
@@ -66,7 +66,7 @@ const TERMS = [
   {
     term: 'Instrumental goal',
     definition:
-      'A sub-goal that is useful for achieving a primary goal. Many primary goals share the same instrumental goals — resource acquisition, self-preservation, goal preservation.',
+      'A sub-goal that is useful for achieving a primary goal. Many primary goals share the same instrumental goals: resource acquisition, self-preservation, and goal preservation.',
   },
 ]
 
@@ -89,7 +89,7 @@ export function Section2Vocabulary() {
 
       <p className="font-sans text-[14px] text-secondary leading-[1.7]" style={{ marginBottom: '20px' }}>
         The failure modes in this atlas are grouped into six families based on the type of failure.
-        These are useful categories, not rigid boundaries — many failure modes span families.
+        These are useful categories, not rigid boundaries. Many failure modes span families.
       </p>
 
       {FAMILY_META.map((f) => (

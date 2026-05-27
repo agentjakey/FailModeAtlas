@@ -14,7 +14,7 @@ export function Section1TheIdea() {
 
       <Prose>
         <p>
-          AI systems fail. Sometimes they fail in obvious ways — the wrong answer, the crashed
+          AI systems fail. Sometimes they fail in obvious ways: the wrong answer, the crashed
           program. But many of the failure modes that safety researchers study are subtler. They
           involve systems that are performing well by every metric while failing in ways the metrics
           cannot see.
@@ -28,7 +28,7 @@ export function Section1TheIdea() {
         <p>
           This atlas tries to make those connections visible. It is organized around twenty-four
           failure modes, grouped into six families, with edges showing conceptual relationships.
-          The layout is educational, not empirical — the geometry is designed to help you orient,
+          The layout is educational, not empirical. The geometry is designed to help you orient,
           not to make claims about the structure of the real problem.
         </p>
       </Prose>
@@ -52,8 +52,8 @@ export function Section1TheIdea() {
           not ground truth about any specific model.
         </p>
         <p>
-          Several of the failure modes described here — deceptive alignment, instrumental
-          convergence, corrigibility failure — are theoretical concerns about future or sufficiently
+          Several of the failure modes described here (deceptive alignment, instrumental
+          convergence, corrigibility failure) are theoretical concerns about future or sufficiently
           capable systems, not confirmed empirical findings in current deployed models. The atlas
           treats these with the appropriate epistemic status: important to understand, speculative in
           their current applicability.
@@ -61,7 +61,7 @@ export function Section1TheIdea() {
       </Prose>
 
       <CareNote>
-        This map is not the territory. The categories are one useful way to organize the space —
+        This map is not the territory. The categories are one useful way to organize the space,
         not the only way, and not a claim about where the real boundaries are. Safety researchers
         actively disagree about taxonomy. This is a starting point for learning, open to
         correction.

@@ -28,7 +28,7 @@ export const RELATIONSHIPS: Relationship[] = [
 
   // Interaction failures cluster
   { source: 'sycophancy', target: 'automation_bias', reason: 'Both involve failure modes where the relationship between user and AI system degrades output quality in ways that are hard to detect.', strength: 3 },
-  { source: 'sycophancy', target: 'representation_overlap_mode', reason: 'Both involve a mismatch between surface appearance and underlying reliability — in sycophancy it is approval versus accuracy; in overlap it is proximity versus meaning.', strength: 2 },
+  { source: 'sycophancy', target: 'representation_overlap_mode', reason: 'Both involve a mismatch between surface appearance and underlying reliability. In sycophancy it is approval versus accuracy; in overlap it is proximity versus meaning.', strength: 2 },
   { source: 'automation_bias', target: 'monitoring_gap', reason: 'Automation bias reduces human attention, effectively widening the monitoring gap by reducing human oversight of AI outputs.', strength: 3 },
 
   // Representation failures cluster

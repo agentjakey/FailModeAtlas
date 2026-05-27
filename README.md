@@ -88,7 +88,7 @@ This project is not affiliated with any AI lab or standards body. The taxonomy i
 
 ## Author
 
-Jacob Ortiz -- https://github.com/agentjakey
+Jacob Ortiz, https://github.com/agentjakey
 
 Part of a broader effort to learn AI safety in public. Errors are mine. Corrections welcome.
 
