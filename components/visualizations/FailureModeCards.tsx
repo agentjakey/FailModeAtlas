@@ -14,6 +14,35 @@ const DIFFICULTY_OPTIONS: { value: Difficulty | 'all'; label: string }[] = [
   { value: 'open_problem', label: 'Open problem' },
 ]
 
+function FilterBtn({
+  label,
+  active,
+  color,
+  onClick,
+}: {
+  label: string
+  active: boolean
+  color?: string
+  onClick: () => void
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className="font-mono text-[11px] border rounded transition-all"
+      style={{
+        padding: '4px 12px',
+        color: active ? '#FAFAF8' : color ?? '#5C5A54',
+        backgroundColor: active ? (color ?? '#1A1915') : 'transparent',
+        borderColor: active ? (color ?? '#1A1915') : '#E4E2DB',
+        cursor: 'pointer',
+      }}
+    >
+      {label}
+    </button>
+  )
+}
+
 export function FailureModeCards() {
   const [query, setQuery] = useState('')
   const [activeFamily, setActiveFamily] = useState<FailureModeFamily | 'all'>('all')
@@ -32,35 +61,6 @@ export function FailureModeCards() {
       return matchesFamily && matchesDifficulty && matchesQuery
     })
   }, [query, activeFamily, activeDifficulty])
-
-  function FilterBtn({
-    label,
-    active,
-    color,
-    onClick,
-  }: {
-    label: string
-    active: boolean
-    color?: string
-    onClick: () => void
-  }) {
-    return (
-      <button
-        type="button"
-        onClick={onClick}
-        className="font-mono text-[11px] border rounded transition-all"
-        style={{
-          padding: '4px 12px',
-          color: active ? '#FAFAF8' : color ?? '#5C5A54',
-          backgroundColor: active ? (color ?? '#1A1915') : 'transparent',
-          borderColor: active ? (color ?? '#1A1915') : '#E4E2DB',
-          cursor: 'pointer',
-        }}
-      >
-        {label}
-      </button>
-    )
-  }
 
   return (
     <div>
