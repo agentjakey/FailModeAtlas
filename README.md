@@ -1,5 +1,6 @@
 # Failure Mode Atlas
 
+https://failuremodeatlas.vercel.app/
 An interactive visual essay mapping 24 AI failure modes across 6 conceptual families. Built as part of the Latent Space Lab series alongside CoT Faithfulness and Neural Polysemanticity.
 
 ## What it is
