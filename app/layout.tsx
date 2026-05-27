@@ -26,7 +26,7 @@ const dmMono = DM_Mono({
 export const metadata: Metadata = {
   title: 'Failure Mode Atlas: A Map of AI Safety Concepts',
   description:
-    'An interactive visual essay mapping 24 AI failure modes across 6 families. Learn reward hacking, deceptive alignment, prompt injection, and more through safe examples and guided paths.',
+    'An interactive visual essay mapping 22 AI failure modes across 6 families. Learn reward hacking, deceptive alignment, prompt injection, and more through safe examples and guided paths.',
   keywords: [
     'AI safety',
     'alignment',

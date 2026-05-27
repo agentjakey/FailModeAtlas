@@ -32,7 +32,7 @@ const NONTECHNICAL_RESOURCES: ResourceItem[] = [
 
 const TECHNICAL_RESOURCES: ResourceItem[] = [
   {
-    title: 'Start with Evaluation Not Safety',
+    title: 'Start with Evaluation Is Not Safety',
     description: 'Covers sandbagging, evaluation gaming, and deceptive alignment. Assumes comfort with the idea of training objectives.',
     type: 'path',
   },
@@ -56,12 +56,12 @@ const TECHNICAL_RESOURCES: ResourceItem[] = [
 const RESEARCHER_RESOURCES: ResourceItem[] = [
   {
     title: 'Start with Hard Boundaries',
-    description: 'The fifth learning path covers power-seeking, corrigibility failure, and instrumental convergence. Intended for readers already familiar with basic alignment concepts.',
+    description: 'The fifth learning path covers instrumental convergence, power-seeking, corrigibility failure, deceptive alignment, and sandbagging. Intended for readers already familiar with basic alignment concepts.',
     type: 'path',
   },
   {
-    title: 'Read: Scalable Oversight (Christiano et al.)',
-    description: 'Core motivation for the monitoring and evaluation failure modes in this atlas.',
+    title: 'Read: Measuring Progress on Scalable Oversight for Large Language Models (Bowman et al., 2022)',
+    description: 'arXiv:2211.03540. Introduces scalable oversight as a research agenda and motivates the monitoring and evaluation failure modes in this atlas.',
     type: 'read',
   },
   {

@@ -22,7 +22,7 @@ export function Section3Atlas() {
       <div className="max-w-[720px] mx-auto px-6 mb-10">
         <SectionHeading n={3}>The Atlas</SectionHeading>
         <Lead>
-          Twenty-four failure modes, six families, and the conceptual edges between them. Click any
+          Twenty-two failure modes, six families, and the conceptual edges between them. Click any
           node to read its definition, analogy, and connections.
         </Lead>
         <CareNote>

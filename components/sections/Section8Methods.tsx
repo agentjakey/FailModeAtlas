@@ -1,5 +1,7 @@
 import { SectionWrapper } from '@/components/ui/SectionWrapper'
 import { SectionHeading, Lead, Callout } from '@/components/ui/Typography'
+import { FAILURE_MODES } from '@/src/data/failureModes'
+import { RELATIONSHIPS } from '@/src/data/relationships'
 
 function MethodBlock({
   title,
@@ -31,7 +33,7 @@ export function Section8Methods() {
       >
         <MethodBlock title="Taxonomy construction">
           <p>
-            The 24 failure modes were selected from the AI safety and alignment literature, focusing
+            The {FAILURE_MODES.length} failure modes were selected from the AI safety and alignment literature, focusing
             on concepts that appear repeatedly across multiple research threads and that have clear
             educational value for non-experts. The six-family grouping is editorial: it reflects
             where problems originate in a simplified pipeline (objective specification, oversight,
@@ -53,7 +55,7 @@ export function Section8Methods() {
         <div style={{ borderTop: '1px solid #E4E2DB', paddingTop: '24px' }}>
           <MethodBlock title="Relationship graph">
             <p>
-              The 32 edges in the graph represent cases where two failure modes share a meaningful
+              The {RELATIONSHIPS.length} edges in the graph represent cases where two failure modes share a meaningful
               conceptual relationship: one can cause the other, both are instances of a more general
               pattern, or understanding one helps explain the other. Strength scores (1-5) reflect
               how direct and well-established the relationship is in the literature. These are

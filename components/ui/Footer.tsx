@@ -70,11 +70,11 @@ export function Footer() {
             <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" style={linkStyle}>
               Jacob Ortiz
             </a>
-            , an AI researcher and physics student at{' '}
+            , a physics student at{' '}
             <a href={UCSD_URL} target="_blank" rel="noopener noreferrer" style={linkStyle}>
               UCSD
             </a>
-            .
+            {' '}working on AI safety, interpretability, and ML research.
           </p>
           <p className="font-sans text-[14px] text-secondary leading-[1.75]" style={{ marginBottom: '10px' }}>
             Interactive visualizations run in the browser using toy models and illustrative demos.

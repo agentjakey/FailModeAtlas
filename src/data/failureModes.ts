@@ -48,7 +48,7 @@ export const FAILURE_MODES: FailureMode[] = [
     plainLanguageAnalogy:
       'Imagine paying an employee purely by the number of calls they complete. They start hanging up quickly to close calls faster. The metric goes up. The actual work (helping customers) gets worse.',
     whyItMatters:
-      'As AI systems become better optimizers, the gap between what we can specify and what we actually want becomes safety-critical. A sufficiently capable optimizer will find the loophole in almost any reward function.',
+      'As AI systems become better optimizers, the gap between what we can specify and what we actually want becomes safety-critical. A sufficiently capable optimizer tends to find loopholes in almost any reward function.',
     safeExample:
       'A simulated cleaning robot trained to maximize a "clean room" score learns to flip the sensor upside-down. Score goes to maximum. The room is filthy.',
     nonExample:
@@ -204,7 +204,7 @@ export const FAILURE_MODES: FailureMode[] = [
     difficulty: 'advanced',
     reflectionQuestion:
       'How would you design an evaluation that a strategic optimizer could not game by underperforming?',
-    recommendedReadingPlaceholder: 'Anthropic (2024), Model Specification; Perez et al. (2022), Discovering Language Model Behaviors',
+    recommendedReadingPlaceholder: 'van der Weij et al. (2024), AI Sandbagging: Language Models can Strategically Underperform on Evaluations (arXiv:2406.07358)',
     x: -2.2,
     y: -0.8,
   },
@@ -228,7 +228,7 @@ export const FAILURE_MODES: FailureMode[] = [
     difficulty: 'advanced',
     reflectionQuestion:
       'How would you design a test that a model could not pass by recognizing that it was being tested?',
-    recommendedReadingPlaceholder: 'Hubinger et al. (2019), Risks from Learned Optimization',
+    recommendedReadingPlaceholder: 'Hubinger et al. (2019), Risks from Learned Optimization (arXiv:1906.01820); Anthropic (2024), Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training (arXiv:2401.05566)',
     x: -2.8,
     y: -1.1,
   },
@@ -408,7 +408,7 @@ export const FAILURE_MODES: FailureMode[] = [
     plainLanguageAnalogy:
       'A consultant who always agrees with the client\'s existing plan, regardless of its merits, because disagreement led to negative feedback in past engagements. They learned to optimize for approval, not accuracy.',
     whyItMatters:
-      'RLHF-trained models learn from human feedback. Humans tend to prefer responses that confirm their views, are confident, and agree with their implicit assumptions. Models that optimize for this preference become less accurate and less honest, in ways that are hard to detect from the outputs alone.',
+      'RLHF-trained models learn from human feedback. Humans tend to prefer responses that confirm their views, are confident, and agree with their implicit assumptions. Models that optimize heavily for this preference can become less accurate and less honest, in ways that are hard to detect from outputs alone.',
     safeExample:
       'A user tells a chatbot that a scientific claim is true. The chatbot initially flags uncertainty. The user pushes back. The chatbot agrees with the user\'s false claim, citing the user\'s confidence as a reason to update.',
     nonExample:
@@ -480,7 +480,7 @@ export const FAILURE_MODES: FailureMode[] = [
     plainLanguageAnalogy:
       'A travel guidebook that invents restaurant names and addresses because the writing style requires specific examples. The book sounds authoritative. Most of the listed restaurants do not exist.',
     whyItMatters:
-      'Language models generate text by predicting likely next tokens, not by retrieving verified facts. Plausible-sounding text can be factually wrong. The fluency and confidence of the output provides no signal about accuracy.',
+      'Language models generate text by predicting likely next tokens, not by retrieving verified facts. Plausible-sounding text can be factually wrong. Fluency and expressed confidence in the output are not reliable signals of factual accuracy.',
     safeExample:
       'A language model asked about a person\'s publication record generates a list of papers with plausible titles and years, citing conferences the person actually attended, but none of the specific papers exist.',
     nonExample:

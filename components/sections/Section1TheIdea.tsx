@@ -26,7 +26,7 @@ export function Section1TheIdea() {
           seemed like the same idea described at different levels of abstraction.
         </p>
         <p>
-          This atlas tries to make those connections visible. It is organized around twenty-four
+          This atlas tries to make those connections visible. It is organized around twenty-two
           failure modes, grouped into six families, with edges showing conceptual relationships.
           The layout is educational, not empirical. The geometry is designed to help you orient,
           not to make claims about the structure of the real problem.
