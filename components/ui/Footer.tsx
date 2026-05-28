@@ -67,7 +67,7 @@ export function Footer() {
           </p>
           <p className="font-sans text-[14px] text-secondary leading-[1.75]" style={{ marginBottom: '10px' }}>
             Built as a learning tool and technical portfolio piece by{' '}
-            <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" style={linkStyle}>
+            <a href="https://www.linkedin.com/in/jacob-ortiz-ab6421348/" target="_blank" rel="noopener noreferrer" style={linkStyle}>
               Jacob Ortiz
             </a>
             , a physics student at{' '}
