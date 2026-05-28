@@ -32,7 +32,7 @@ export function Hero() {
           className="font-mono text-accent"
           style={{ fontSize: '11px', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '32px' }}
         >
-          Latent Space Lab
+          <a href="https://agentjakey.substack.com/" target="_blank" rel="noopener noreferrer">Latent Space Lab</a>
         </motion.p>
 
         <motion.div variants={item}>
