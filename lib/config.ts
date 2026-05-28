@@ -9,7 +9,7 @@ export const UCSD_URL = 'https://ucsd.edu'
 // TODO: replace with your actual Ko-fi URL, e.g. https://ko-fi.com/agentjakey
 export const KOFI_URL = 'https://ko-fi.com/agentjakey'
 export const SIBLING_PROJECTS = [
-  { name: 'Representation Overlap Lab', url: 'https://github.com/agentjakey/RepOverLab' },
+  { name: 'Representation Overlap Lab', url: 'https://representation-overlap-lab.vercel.app/' },
   { name: 'CoT Faithfulness', url: 'https://cot-faithfulness.vercel.app' },
   { name: 'Neural Polysemanticity', url: 'https://neural-polysemanticity.vercel.app' },
 ]
